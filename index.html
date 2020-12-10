@@ -3,10 +3,18 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Solar Eclipse Global Broadcast</title>
-  <meta name="description" content="Website for the Global Broadcast for the Total Solar Eclipse on December 14, 2020">
+  <title></title>
+  <meta name="description" content="Global Broadcast for a Total Eclipse">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta property="og:title" content="Global Broadcast for a Total Eclipse">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Global Broadcast for a Total Eclipse is an online happening that celebrates and commemorates the Total Solar Eclipse which will take place on December 14th, 2020. ">
+  <meta property="og:url" content="http://www.solareclipsebroadcast.earth/">
+  <meta property="og:image" content="https://github.com/epar/solareclipsebroadcast/img/eclipse-img.jpg">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -14,7 +22,80 @@
 </head>
 
 <body>
-  <p>Placeholder for the website for the Global Broadcast for the Total Solar Eclipse on December 14, 2020</p>
+  <div id="suncontainer">
+  </div>
+    <main>
+      <nav>
+        <h1>GLOBAL BROADCAST FOR A TOTAL ECLIPSE: 2'10"</h1>
+        <ul>
+          <li><a href="#eclipseviewers">ECLIPSE VIEWERS</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#stream">STREAM</a></li>
+          <!-- <li><a href="#map">Map</a></li> -->
+        </ul>
+      </nav>
+      <header id="head">
+        <video autoplay muted loop width="100%" height="56.25%">
+          <source src="video/eclipse.mp4" type="video/mp4">
+        </video>
+      </header>
+
+      <section id="stream">
+        <h2>JOIN US LIVE ON DECEMBER 14, 2020 at 16:12:30 UTC</h2>
+        <iframe width="1000" height="563" src="https://www.youtube.com/embed/live_stream?channel=UCBrqzHX0jd4IRZLzcl_9Tlw" frameborder="0" allowfullscreen></iframe>
+      </section>
+
+      <section id="about">
+        <h2>ABOUT</h2>
+        <p>On December 14, 2020, a total solar eclipse will pass over southern Chile and Argentina.</p>
+
+        <p>Even though the Path of Totality will be directly visible only within a narrow band across Chile and Argentina, we wish to acknowledge this wondrous alignment of the earth, moon and sun.</p>
+
+        <p>Before COVID, some of us planned to physically be there. However, travel has been drastically reduced and video conferencing has since exploded; many of our projects have been canceled, postponed or turned into online events. In response, we decided to watch the Solar Eclipse together, globally, online.</p>
+
+        <p>Even though the Path of Totality will be directly visible only within a narrow band across Chile and Argentina, we wish to acknowledge this wondrous alignment of the earth, moon and sun.</p>
+
+        <p>Artists from around the globe will tune in simultaneously for 2’10”, the duration of the total eclipse from the Greatest Eclipse Point (the geographic spot with the longest period of totality); each will look towards the sun from their respective location on the globe (whether above or below the horizon). Join us as a virtual eclipse chaser!</p>
+
+        <p>The title for this event refers to the live Fluxus broadcast  by Nam June Paik from the (decade?) and to John Cage’s seminal 4’33”, 1952. In the spirit of Cage’s 4’33”, participants will be silent, but ambient sounds from our locations will be transmitted and audible.</p>
+
+        <p>While 2020 has been a challenging year on earth, this rare alignment will proceed regardless.</p>
+
+      </section>
+
+      <section id="eclipseviewers">
+        <h2>ECLIPSE VIEWERS</h2>
+        <ul>
+          <li>Flor de Fuego (Florencia Alonso), La Plata, Argentina - From the band “The Total Eclipse”</li>
+          <li>Alvaro Azcarraga, Mexico City, Mexico</li>
+          <li>Nicky Assmann & Joris Strijbos, Dark Sky Park, Netherlands</li>
+          <li>Julianna Bach, Los Angeles, California, USA</li>
+          <li>Miguel Bolt, Pucón, Chile - in the path of totality</li>
+          <li>Min Choi, Seoul, South Korea</li>
+          <li>Chris Cobilis, Perth, Western Australia, Australia</li>
+          <li>Rebecca Cummins, Seattle, WA, USA</li>
+          <li>Cocky Eek & Theun Karelse, Amsterdam, Netherlands</li>
+          <li>Dakota Gearhardt, New York, New York, USA</li>
+          <li>Joyce Hinterding & David Haines, Blue Mountains, New South Wales, Australia</li>
+          <li>Xiaoxuan Amanda Jiang, Baotou (Inner Mongolia), China - antipode of the eclipse</li>
+          <li>NASA: live stream of the Solar Eclipse</li>
+          <li>Pantea, Tehran, Iran</li>
+          <li>Eric Parren, Shanghai, China</li>
+          <li>Natalie Penang, Johannesburg, South Africa</li>
+          <li>Laurel Schultz, Holualoa, Hawaii, USA</li>
+          <li>Vanja Smiljanic & Lukas Marxt, Koln, Germany</li>
+        </ul>
+
+      </section>
+
+      <footer>
+        <p>Co-organized by Nicky Assmann, Rebecca Cummins, and Eric Parren. Thank you to Woody Sullivan, Phyllis Fei, and the Sun & the Moon.<p>
+      </footer>
+    </main>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
