@@ -63,6 +63,15 @@ nav h1 {
   width: 60%;
 }
 
+a, a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: underling;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 nav h1 a, nav h1 a:visited {
   color: rgb(222, 222, 222);
   text-decoration: none;
