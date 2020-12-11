@@ -16,7 +16,7 @@ html {
   font-size: 1em;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 body {
@@ -63,14 +63,23 @@ nav h1 {
   width: 60%;
 }
 
-nav ul a, nav ul aa:visited {
+nav h1 a, nav h1 a:visited {
   color: rgb(222, 222, 222);
   text-decoration: none;
 }
 
+nav ul a, nav ul a:visited {
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+}
+
 main nav ul {
   position: absolute;
-  right: 10px;
+  right: 0px;
   bottom: 0px;
   font-weight: 400;
   font-size: 20px;
@@ -110,8 +119,10 @@ section iframe {
   width: 100% !important;
 }
 
-#stream {
+#stream h2 {
   padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
 }
 
 #about {
@@ -121,16 +132,23 @@ section iframe {
 
 #eclipseviewers {
   border-top: 1px solid rgba(222, 222, 222, 0.8);
-  padding-top: 25px;
+  padding-top: 50px;
 }
 
 footer {
   border-top: 1px solid rgba(222, 222, 222, 0.8);
   margin-top: 50px;
   padding-top: 25px;
-  padding-bottom: 50px;
+  padding-bottom: 25px;
   font-size: 0.8rem;
 }
+
+#closingimg {
+  width: 100%;
+  height: auto;
+  background-color: green;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -289,8 +307,125 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1200px) {
+  main {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  footer {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 1065px) {
+  h1 {
+    padding-top: 10px;
+    font-size: 24px !important;
+  }
+  nav ul {
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  h1 {
+    font-size: 22px !important;
+  }
+  nav ul {
+    font-size: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 865px) {
+  h1 {
+    /* font-size: 22px !important; */
+    position: relative !important;
+    width: 100% !important;
+  }
+  nav ul {
+    width: 100% !important;
+    position: relative !important;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+
+  html {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+      font-size: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 606px) {
+  #stream h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 535px) {
+  h1 {
+    font-size: 18px !important;
+    text-align: center;
+    left: 0px !important;
+  }
+  nav ul {
+    font-size: 14px !important;
+  }
+}
+
+@media only screen and (max-width: 511px) {
+  #stream h2 {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 464px) {
+  h1 {
+    font-size: 16px !important;
+    text-align: center;
+    padding-top: 15px;
+  }
+  nav ul {
+    font-size: 12px !important;
+  }
+  #stream h2 {
+    font-size: 0.9em;
+  }
+}
+
+
+@media only screen and (max-width: 416px) {
+  h1 {
+    font-size: 14px !important;
+    text-align: center;
+  }
+  nav ul {
+    font-size: 12px !important;
+  }
+  #stream h2 {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  h1 {
+    font-size: 13px !important;
+    text-align: center;
+  }
+  nav ul {
+    font-size: 12px !important;
+  }
+  #stream h2 {
+    font-size: 0.69em;
+  }
 }
 
 @media print,
